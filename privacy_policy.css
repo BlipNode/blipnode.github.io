@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background: #F1F1F1;
+    --primary: #1F1F1F;
+    --secondary: #9A9AAA;
+}
+
+/* ========= RESET ========= */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========= PRIVACY POLICY ========= */
+
+.topic {
+    margin-top: 50px;
+    color: var(--primary);
+    letter-spacing: 0.02em;
+}
+
+.paragraph {
+    color: var(--primary);
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+.container-privacy-policy {
+    padding-right: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+}
+
+.container-privacy-policy .title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.container-privacy-policy .title h1 {
+    color: var(--primary);
+}
+
+.container-privacy-policy .title h3 {
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.container-privacy-policy .nav-privacy-policy {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.container-privacy-policy .nav-privacy-policy li {
+    margin-top: 20px;
+}
+
+.container-privacy-policy .nav-privacy-policy ul {
+    list-style-type: disc;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BlipNode">
+    <title>BlipNode - MindFlip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/26aac9298c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="header-nav">
+            <div id="nav-logo">
+                <img src="assets/images/blipnode-logo.png" height=100px alt="BlipNode Logo">
+            </div>
+
+            <div id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="mindflip.html">MindFlip</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-mindflip">
+        <div class="main-row">
+            <div class="showcase">
+                <img src="assets/images/showcase.png" height="650px" alt="Showcase">
+            </div>
+
+            <div class="content">
+                <div class="logo">
+                    <img src="assets/images/mindflip-logo.png" height="100px" alt="MindFlip Logo">
+                </div>
+
+                <div class="texts">
+                    <h1>MindFlip</h1>
+                    <h2>Learn fast. Remember longer.</h2>
+                </div>
+
+                <div class="buttons">
+                    <button id="google-play-button"><i class="fa-brands fa-google-play"></i>Google Play</button>
+                </div>
+
+                <p>Created by BlipNode</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            menuToggle.innerHTML = navLinks.classList.contains("active")
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        });
+    </script>
+</body>
+
+</html>
